@@ -1,4 +1,7 @@
-# Passport-Reddit [![Build Status](https://app.travis-ci.com/Slotos/passport-reddit.svg)](https://app.travis-ci.com/Slotos/passport-reddit) [![Coverage Status](https://codecov.io/gh/Slotos/passport-reddit/branch/main/graph/badge.svg)](https://codecov.io/gh/Slotos/passport-reddit)
+# Passport-Reddit-commonJS
+
+This is a rework of the [original package](https://github.com/Slotos/passport-reddit) to use commonJS modules instead of ES6. All credits to them for making this strategy possible!
+This fork is not activly maintained, but will recieve an update when I need to make changes for my own projects aswell.
 
 [Passport](https://github.com/jaredhanson/passport) strategy for authenticating
 with [Reddit](http://reddit.com/) using the OAuth 2.0 API.
@@ -11,7 +14,7 @@ unobtrusively integrated into any application or framework that supports
 
 ## Install
 
-    $ npm install passport-reddit
+    $ npm install passport-reddit-commonJS
 
 ## Usage
 
@@ -23,6 +26,9 @@ accepts these credentials and calls `done` providing a user, as well as
 `options` specifying a client ID, client secret, and callback URL.
 
 ```javascript
+
+const RedditStrategy = require("passport-reddit-commonJS").Strategy
+
 passport.use(new RedditStrategy({
     clientID: REDDIT_CONSUMER_KEY,
     clientSecret: REDDIT_CONSUMER_SECRET,
@@ -66,17 +72,9 @@ Possible values: `permanent` and `temporary` (1 hour).
 
 Defined in the official [Reddit OAuth spec](https://github.com/reddit/reddit/wiki/OAuth2#authorization-parameters)
 
-## Examples
-
-For a complete, working example, refer to the [login example](https://github.com/slotos/passport-reddit/tree/master/examples/login).
-
-## Tests
-
-    $ npm install --dev
-    $ make test
-
 ## Credits
 
+  - [Original repo](https://github.com/Slotos/passport-reddit)
   - [Jared Hanson](http://github.com/jaredhanson)
   - [Dmytro Soltys](http://github.com/slotos)
   - [Brian Partridge](http://github.com/bpartridge83)

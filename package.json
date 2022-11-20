@@ -1,8 +1,7 @@
 {
-  "name": "passport-reddit",
+  "name": "passport-reddit-commonjs",
   "version": "1.1.0",
-  "description": "Reddit authentication strategy for Passport.",
-  "type": "module",
+  "description": "Reddit authentication strategy for Passport. using commonJS modules instead of ES6 modules",
   "keywords": [
     "passport",
     "reddit",
@@ -13,28 +12,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/slotos/passport-reddit.git"
+    "url": "git://github.com/Nidrux/passport-reddit-commonjs.git"
   },
   "bugs": {
-    "url": "http://github.com/slotos/passport-reddit/issues"
+    "url": "https://github.com/Nidrux/passport-reddit-commonJS/issues"
   },
   "author": {
     "name": "Jared Hanson",
     "email": "jaredhanson@gmail.com",
     "url": "http://www.jaredhanson.net/"
   },
-  "contributors": [
-    {
-      "name": "Dmytro Soltys",
-      "email": "soap@slotos.net",
-      "url": "http://slotos.net/"
-    },
-    {
-      "name": "Brian Partridge",
-      "email": "contact@brianpartridge.com",
-      "url": "http://brianpartridge.com/"
-    }
-  ],
   "licenses": [
     {
       "type": "MIT",
@@ -45,30 +32,7 @@
   "dependencies": {
     "passport-oauth2": "^1.6"
   },
-  "devDependencies": {
-    "blanket": "*",
-    "body-parser": "^1.20.0",
-    "c8": "^7.11.3",
-    "chai": "*",
-    "codecov": "^3.8.3",
-    "cookie-parser": "^1.4.6",
-    "coveralls": "*",
-    "eslint": "^8.20.0",
-    "express": "^4.18.1",
-    "express-session": "^1.17.3",
-    "method-override": "^3.x",
-    "mocha": "*",
-    "nock": "*",
-    "passport": "*",
-    "sinon": "*",
-    "supertest": "*"
-  },
   "scripts": {
-    "test": "c8 mocha test",
-    "test-debug": "mocha --inspect-brk test",
-    "test-w": "mocha --watch --parallel --reporter=min --watch-files='lib/**/*.js,test/**/*.js' test test/integration",
-    "integration": "mocha test/integration",
-    "coverage": "c8 report --reporter=text-lcov |codecov --pipe",
     "lint": "eslint lib"
   },
   "engines": {
