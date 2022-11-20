@@ -14,7 +14,7 @@ unobtrusively integrated into any application or framework that supports
 
 ## Install
 
-    $ npm install passport-reddit-commonJS
+    $ npm install passport-reddit-commonjs
 
 ## Usage
 
@@ -27,7 +27,7 @@ accepts these credentials and calls `done` providing a user, as well as
 
 ```javascript
 
-const RedditStrategy = require("passport-reddit-commonJS").Strategy
+const RedditStrategy = require("passport-reddit-commonjs").Strategy
 
 passport.use(new RedditStrategy({
     clientID: REDDIT_CONSUMER_KEY,
